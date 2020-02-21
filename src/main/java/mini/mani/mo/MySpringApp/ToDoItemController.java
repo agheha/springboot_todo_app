@@ -26,6 +26,7 @@ public class ToDoItemController {
 			toDoItem = toDoItemService.get(id);
 		} catch (final Exception e) {
 			errors.add(e.getMessage());
+			
 		}
 		
 		return ToDoItemAdapter.toDoItemResponse(toDoItem, errors);
