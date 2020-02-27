@@ -1,5 +1,6 @@
 package mini.mani.mo.MySpringApp;
 
-public class ToDoItemRequest {
+public class ToDoItemRequest extends ToDoItem{
 
+	
 }

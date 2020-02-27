@@ -5,9 +5,9 @@ import java.util.List;
 import lombok.*;
 
 @Getter @Setter
-@RequiredArgsConstructor
+@NoArgsConstructor
 public abstract class ApiResponse<T> {
-	@NonNull private T data;
+	private T data;
 	private List<String> errors;
 	/*
 	 * 모든 Response에 공통으로 에러메레지 리스트가 들어있어야한다.

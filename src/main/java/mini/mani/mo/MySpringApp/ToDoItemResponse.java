@@ -1,17 +1,14 @@
 package mini.mani.mo.MySpringApp;
 
-import mini.mani.mo.MySpringApp.ApiResponse;
-import java.util.List;
 import lombok.Builder;
+import java.util.List;
 
 public class ToDoItemResponse extends ApiResponse<ToDoItem> {
 
-	@Builder
+    @Builder
     public ToDoItemResponse(final ToDoItem toDoItem, final List<String> errors) {
-		super(toDoItem);
-		this.setErrors(errors);
+        this.setData(toDoItem);
+        this.setErrors(errors);
     }
-
 }
-
 
